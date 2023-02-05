@@ -15,7 +15,7 @@ public class AvailableAlgorithm {
         return EnumDataUtility.getEnumDataStructorList();
     }
 
-    public List<EnumSortAlgorithm> getAvaiableEnumSortAlgorithmListWithGivenDataStructor(EnumDataStructor enumDataStructor) {
+    public List<EnumSortAlgorithm> getAvailableEnumSortAlgorithmListWithGivenDataStructor(EnumDataStructor enumDataStructor) {
         List<EnumSortAlgorithm> list = new ArrayList<>();
         switch (enumDataStructor) {
             case ARRAY:
@@ -44,6 +44,7 @@ public class AvailableAlgorithm {
                 break;
             case HASHMAP:
                 list.add(EnumSearchAlgorithm.HASHMAP);
+                break;
             case SEARCHNODE_V1:
             case SEARCHNODE_V2:
                 list.add(EnumSearchAlgorithm.SEARCH_NODE);
